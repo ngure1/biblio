@@ -1,6 +1,6 @@
 name: biblio
 description: "A new Flutter project."
-publish_to: 'none'
+publish_to: "none"
 version: 0.1.0
 
 environment:
@@ -10,6 +10,8 @@ dependencies:
   flutter:
     sdk: flutter
 
+  flutter_svg: ^2.0.10+1
+
 dev_dependencies:
   flutter_test:
     sdk: flutter
@@ -17,3 +19,7 @@ dev_dependencies:
 
 flutter:
   uses-material-design: true
+  assets:
+    - lib/core/assets/
+    - lib/core/assets/vectors/
+    - lib/core/assets/images/
