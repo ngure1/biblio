@@ -1,0 +1,85 @@
+{
+    "kind": "books#volume",
+    "id": "m_xcEAAAQBAJ",
+    "etag": "5dTgWeM0Ao8",
+    "selfLink": "https://www.googleapis.com/books/v1/volumes/m_xcEAAAQBAJ",
+    "volumeInfo": {
+        "title": "The Psychology of Money",
+        "subtitle": "Timeless Lessons on Wealth, Greed, and Happiness",
+        "authors": [
+            "Morgan Housel"
+        ],
+        "publisher": "Harriman House",
+        "publishedDate": "2021-03-02",
+        "description": "<p><b>Over 5 million copies sold around the world. The original book from Morgan Housel, the New York Times bestselling author of <i>Same As Ever</i>.</b><br><br>Doing well with money isn't necessarily about what you know. It's about how you behave. And behavior is hard to teach, even to really smart people.<br><br>Money – investing, personal finance, and business decisions – is typically taught as a math-based field, where data and formulas tell us exactly what to do. But in the real world people don't make financial decisions on a spreadsheet. They make them at the dinner table, or in a meeting room, where personal history, your own unique view of the world, ego, pride, marketing, and odd incentives are scrambled together.<br><br>In <i>The Psychology of Money</i>, award-winning author Morgan Housel shares 19 short stories exploring the strange ways people think about money and teaches you how to make better sense of one of life's most important topics.</p>",
+        "industryIdentifiers": [
+            {
+                "type": "ISBN_10",
+                "identifier": "0857199099"
+            },
+            {
+                "type": "ISBN_13",
+                "identifier": "9780857199096"
+            }
+        ],
+        "readingModes": {
+            "text": true,
+            "image": false
+        },
+        "pageCount": 256,
+        "printedPageCount": 256,
+        "dimensions": {
+            "height": "22.00 cm",
+            "width": "14.90 cm",
+            "thickness": "2.20 cm"
+        },
+        "printType": "BOOK",
+        "categories": [
+            "Business & Economics / Finance / Wealth Management",
+            "Business & Economics / Economics / Macroeconomics",
+            "Business & Economics / Money & Monetary Policy",
+            "Business & Economics / Motivational",
+            "Business & Economics / Personal Finance / Investing",
+            "Business & Economics / Personal Finance / Money Management",
+            "Psychology / Industrial & Organizational Psychology",
+            "Self-Help / Motivational & Inspirational",
+            "Self-Help / Personal Growth / Success"
+        ],
+        "maturityRating": "NOT_MATURE",
+        "allowAnonLogging": false,
+        "contentVersion": "preview-1.0.0",
+        "panelizationSummary": {
+            "containsEpubBubbles": false,
+            "containsImageBubbles": false
+        },
+        "imageLinks": {
+            "smallThumbnail": "http://books.google.com/books/publisher/content?id=m_xcEAAAQBAJ&printsec=frontcover&img=1&zoom=5&imgtk=AFLRE72sgCKXar0-iRQLezg89rlP6CsVqotedcd4jvfJxb5QGzlcpAOO608tUd8fydEFXGgK4mk-uzh3Y_cvmfZOIeLmiLLPVBsfWRGscyJZWZ1yKgcceyjTMkvduHk_fp22bt6safn0&source=gbs_api",
+            "thumbnail": "http://books.google.com/books/publisher/content?id=m_xcEAAAQBAJ&printsec=frontcover&img=1&zoom=1&imgtk=AFLRE70ERVedqdjq5j-6dNar1QykrXHSoulre85uHHJkUVM-iRNEvN7OTEmdbTbLVVoDE4PxgJ8rOX9FGJvuKDo-9nUXUCIxca2A1ET-Z7_ND_65XlUAYbRG3BJHdLBQRem_as_iumF0&source=gbs_api"
+        },
+        "language": "en",
+        "previewLink": "http://books.google.com/books?id=m_xcEAAAQBAJ&hl=&source=gbs_api",
+        "infoLink": "https://play.google.com/store/books/details?id=m_xcEAAAQBAJ&source=gbs_api",
+        "canonicalVolumeLink": "https://play.google.com/store/books/details?id=m_xcEAAAQBAJ"
+    },
+    "saleInfo": {
+        "country": "KE",
+        "saleability": "NOT_FOR_SALE",
+        "isEbook": false
+    },
+    "accessInfo": {
+        "country": "KE",
+        "viewability": "NO_PAGES",
+        "embeddable": false,
+        "publicDomain": false,
+        "textToSpeechPermission": "ALLOWED",
+        "epub": {
+            "isAvailable": false
+        },
+        "pdf": {
+            "isAvailable": false
+        },
+        "webReaderLink": "http://play.google.com/books/reader?id=m_xcEAAAQBAJ&hl=&source=gbs_api",
+        "accessViewStatus": "NONE",
+        "quoteSharingAllowed": false
+    }
+}

@@ -1,0 +1,338 @@
+{
+	"kind": "books#volumes",
+	"totalItems": 463,
+	"items": [
+		{
+			"kind": "books#volume",
+			"id": "m_xcEAAAQBAJ",
+			"etag": "2K7MjH0XlGo",
+			"selfLink": "https://www.googleapis.com/books/v1/volumes/m_xcEAAAQBAJ",
+			"volumeInfo": {
+				"title": "The Psychology of Money",
+				"subtitle": "Timeless Lessons on Wealth, Greed, and Happiness",
+				"authors": ["Morgan Housel"],
+				"publishedDate": "2021-03-02",
+				"description": "Doing well with money isn't necessarily about what you know. It's about how you behave. In The Psychology of Money, author Morgan Housel shares 19 short stories exploring the strange ways people think about money and teaches how to make better sense of one of life's most important topics.",
+				"industryIdentifiers": [
+					{
+						"type": "ISBN_13",
+						"identifier": "9780857199096"
+					},
+					{
+						"type": "ISBN_10",
+						"identifier": "0857199099"
+					}
+				],
+				"readingModes": {
+					"text": true,
+					"image": false
+				},
+				"pageCount": 0,
+				"printType": "BOOK",
+				"categories": ["Business & Economics"],
+				"maturityRating": "NOT_MATURE",
+				"allowAnonLogging": false,
+				"contentVersion": "preview-1.0.0",
+				"panelizationSummary": {
+					"containsEpubBubbles": false,
+					"containsImageBubbles": false
+				},
+				"imageLinks": {
+					"smallThumbnail": "http://books.google.com/books/content?id=m_xcEAAAQBAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+					"thumbnail": "http://books.google.com/books/content?id=m_xcEAAAQBAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+				},
+				"language": "en",
+				"previewLink": "http://books.google.com/books?id=m_xcEAAAQBAJ&dq=the+psychology+of+money&hl=&cd=1&source=gbs_api",
+				"infoLink": "http://books.google.com/books?id=m_xcEAAAQBAJ&dq=the+psychology+of+money&hl=&source=gbs_api",
+				"canonicalVolumeLink": "https://books.google.com/books/about/The_Psychology_of_Money.html?hl=&id=m_xcEAAAQBAJ"
+			},
+			"saleInfo": {
+				"country": "KE",
+				"saleability": "NOT_FOR_SALE",
+				"isEbook": false
+			},
+			"accessInfo": {
+				"country": "KE",
+				"viewability": "NO_PAGES",
+				"embeddable": false,
+				"publicDomain": false,
+				"textToSpeechPermission": "ALLOWED",
+				"epub": {
+					"isAvailable": false
+				},
+				"pdf": {
+					"isAvailable": false
+				},
+				"webReaderLink": "http://play.google.com/books/reader?id=m_xcEAAAQBAJ&hl=&source=gbs_api",
+				"accessViewStatus": "NONE",
+				"quoteSharingAllowed": false
+			},
+			"searchInfo": {
+				"textSnippet": "It&#39;s about how you behave. In The Psychology of Money, author Morgan Housel shares 19 short stories exploring the strange ways people think about money and teaches how to make better sense of one of life&#39;s most important topics."
+			}
+		},
+		{
+			"kind": "books#volume",
+			"id": "SgdGEAAAQBAJ",
+			"etag": "5JZgpCq/uyI",
+			"selfLink": "https://www.googleapis.com/books/v1/volumes/SgdGEAAAQBAJ",
+			"volumeInfo": {
+				"title": "Illustration of The Psychology of Money",
+				"subtitle": "(Summarized and Illustrated), Illustrated Edition, Picture Book by Morgan Housel",
+				"authors": ["Fast Short Reads"],
+				"publisher": "Fast Short Reads",
+				"description": "Never risk what you have and need for what you don't have and don't need' how much money will you earn with an masters in ps how much money do people in the psychology field m how much money does a psychology professor at cali what are all the branches and fields of psychology what are the branches of pure and applied psycholo what are the different classification in psycholog the psychology of money the psychology of money pdf the psychology of money book the psychology of money pdf download free the psychology of money morgan housel the psychology of money audiobook the psychology of money morgan housel pdf the psychology of money book pdf the psychology of money pdf download the psychology of money summary the psychology of money review the psychology of money book reviewe Psychology of Money",
+				"readingModes": {
+					"text": false,
+					"image": true
+				},
+				"printType": "BOOK",
+				"categories": ["Fiction"],
+				"maturityRating": "NOT_MATURE",
+				"allowAnonLogging": false,
+				"contentVersion": "0.0.1.0.preview.1",
+				"panelizationSummary": {
+					"containsEpubBubbles": false,
+					"containsImageBubbles": false
+				},
+				"imageLinks": {
+					"smallThumbnail": "http://books.google.com/books/content?id=SgdGEAAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+					"thumbnail": "http://books.google.com/books/content?id=SgdGEAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+				},
+				"language": "en",
+				"previewLink": "http://books.google.com/books?id=SgdGEAAAQBAJ&printsec=frontcover&dq=the+psychology+of+money&hl=&cd=2&source=gbs_api",
+				"infoLink": "http://books.google.com/books?id=SgdGEAAAQBAJ&dq=the+psychology+of+money&hl=&source=gbs_api",
+				"canonicalVolumeLink": "https://books.google.com/books/about/Illustration_of_The_Psychology_of_Money.html?hl=&id=SgdGEAAAQBAJ"
+			},
+			"saleInfo": {
+				"country": "KE",
+				"saleability": "NOT_FOR_SALE",
+				"isEbook": false
+			},
+			"accessInfo": {
+				"country": "KE",
+				"viewability": "PARTIAL",
+				"embeddable": true,
+				"publicDomain": false,
+				"textToSpeechPermission": "ALLOWED",
+				"epub": {
+					"isAvailable": false
+				},
+				"pdf": {
+					"isAvailable": true,
+					"acsTokenLink": "http://books.google.com/books/download/Illustration_of_The_Psychology_of_Money-sample-pdf.acsm?id=SgdGEAAAQBAJ&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+				},
+				"webReaderLink": "http://play.google.com/books/reader?id=SgdGEAAAQBAJ&hl=&source=gbs_api",
+				"accessViewStatus": "SAMPLE",
+				"quoteSharingAllowed": false
+			},
+			"searchInfo": {
+				"textSnippet": "Never risk what you have and need for what you don&#39;t have and don&#39;t need&#39; how much money will you earn with an masters in ps how much money do people in the psychology field m how much money does a psychology professor at cali what are all ..."
+			}
+		},
+		{
+			"kind": "books#volume",
+			"id": "mOf2EAAAQBAJ",
+			"etag": "BeZy59qkQT0",
+			"selfLink": "https://www.googleapis.com/books/v1/volumes/mOf2EAAAQBAJ",
+			"volumeInfo": {
+				"title": "The Psychology of Money",
+				"subtitle": "The Mindset of Wealth: Enduring Insights on Prosperity, Desire, and Joy",
+				"authors": ["Matt Kingsley"],
+				"publisher": "Matt Kingsley",
+				"publishedDate": "2024-02-17",
+				"description": "Are you ready to transform your relationship with money and unlock a life of genuine wealth and fulfillment? Dive into a revolutionary approach that goes beyond mere numbers and charts to explore the very psychology of money. This isn't just another finance book—it's a journey into the heart of what money means to us and how we can use it to create a life rich with purpose and joy. Imagine understanding the hidden forces that drive our financial decisions, the subtle ways our emotions and biases shape our paths, and the strategies that can lead us to true financial wisdom. This book doesn't just offer tips; it provides a profound framework for aligning your financial actions with your deepest values and goals. Forget the get-rich-quick schemes and the overwhelming jargon. Here, you'll discover a clear, compelling path that respects the complexity of your financial life while guiding you towards clarity and confidence. Whether you're struggling with debt, striving to build wealth, or somewhere in between, this book is your compass in the often-confusing world of personal finance. Unlock the secrets to a richer life, not just in terms of wealth, but in happiness, relationships, and personal growth. Make the choice today to redefine your financial future. Join us on this transformative journey and see how changing your relationship with money can change your life.",
+				"industryIdentifiers": [
+					{
+						"type": "OTHER",
+						"identifier": "PKEY:6610000534296"
+					}
+				],
+				"readingModes": {
+					"text": true,
+					"image": true
+				},
+				"pageCount": 83,
+				"printType": "BOOK",
+				"categories": ["Business & Economics"],
+				"maturityRating": "NOT_MATURE",
+				"allowAnonLogging": true,
+				"contentVersion": "0.11.10.0.preview.3",
+				"panelizationSummary": {
+					"containsEpubBubbles": false,
+					"containsImageBubbles": false
+				},
+				"imageLinks": {
+					"smallThumbnail": "http://books.google.com/books/content?id=mOf2EAAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+					"thumbnail": "http://books.google.com/books/content?id=mOf2EAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+				},
+				"language": "en",
+				"previewLink": "http://books.google.com/books?id=mOf2EAAAQBAJ&printsec=frontcover&dq=the+psychology+of+money&hl=&cd=3&source=gbs_api",
+				"infoLink": "http://books.google.com/books?id=mOf2EAAAQBAJ&dq=the+psychology+of+money&hl=&source=gbs_api",
+				"canonicalVolumeLink": "https://books.google.com/books/about/The_Psychology_of_Money.html?hl=&id=mOf2EAAAQBAJ"
+			},
+			"saleInfo": {
+				"country": "KE",
+				"saleability": "NOT_FOR_SALE",
+				"isEbook": false
+			},
+			"accessInfo": {
+				"country": "KE",
+				"viewability": "PARTIAL",
+				"embeddable": true,
+				"publicDomain": false,
+				"textToSpeechPermission": "ALLOWED",
+				"epub": {
+					"isAvailable": true,
+					"acsTokenLink": "http://books.google.com/books/download/The_Psychology_of_Money-sample-epub.acsm?id=mOf2EAAAQBAJ&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+				},
+				"pdf": {
+					"isAvailable": true,
+					"acsTokenLink": "http://books.google.com/books/download/The_Psychology_of_Money-sample-pdf.acsm?id=mOf2EAAAQBAJ&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+				},
+				"webReaderLink": "http://play.google.com/books/reader?id=mOf2EAAAQBAJ&hl=&source=gbs_api",
+				"accessViewStatus": "SAMPLE",
+				"quoteSharingAllowed": false
+			},
+			"searchInfo": {
+				"textSnippet": "This book doesn&#39;t just offer tips; it provides a profound framework for aligning your financial actions with your deepest values and goals. Forget the get-rich-quick schemes and the overwhelming jargon."
+			}
+		},
+		{
+			"kind": "books#volume",
+			"id": "zJ7EzgEACAAJ",
+			"etag": "sMilG6DQpno",
+			"selfLink": "https://www.googleapis.com/books/v1/volumes/zJ7EzgEACAAJ",
+			"volumeInfo": {
+				"title": "Summary of The Psychology of Money",
+				"subtitle": "Timeless Lessons on Wealth, Greed, and Happiness by Morgan Housel",
+				"authors": ["Book Tigers"],
+				"publishedDate": "2021-12-06",
+				"description": "This e-book, The Psychology of Money: Timeless Lessons on Wealth, Greed, and Happiness, by Morgan Housel, is an unofficial summary and analysis of the original book.",
+				"industryIdentifiers": [
+					{
+						"type": "ISBN_10",
+						"identifier": "1774900505"
+					},
+					{
+						"type": "ISBN_13",
+						"identifier": "9781774900505"
+					}
+				],
+				"readingModes": {
+					"text": false,
+					"image": false
+				},
+				"pageCount": 98,
+				"printType": "BOOK",
+				"maturityRating": "NOT_MATURE",
+				"allowAnonLogging": false,
+				"contentVersion": "preview-1.0.0",
+				"panelizationSummary": {
+					"containsEpubBubbles": false,
+					"containsImageBubbles": false
+				},
+				"imageLinks": {
+					"smallThumbnail": "http://books.google.com/books/content?id=zJ7EzgEACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api",
+					"thumbnail": "http://books.google.com/books/content?id=zJ7EzgEACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api"
+				},
+				"language": "en",
+				"previewLink": "http://books.google.com/books?id=zJ7EzgEACAAJ&dq=the+psychology+of+money&hl=&cd=4&source=gbs_api",
+				"infoLink": "http://books.google.com/books?id=zJ7EzgEACAAJ&dq=the+psychology+of+money&hl=&source=gbs_api",
+				"canonicalVolumeLink": "https://books.google.com/books/about/Summary_of_The_Psychology_of_Money.html?hl=&id=zJ7EzgEACAAJ"
+			},
+			"saleInfo": {
+				"country": "KE",
+				"saleability": "NOT_FOR_SALE",
+				"isEbook": false
+			},
+			"accessInfo": {
+				"country": "KE",
+				"viewability": "NO_PAGES",
+				"embeddable": false,
+				"publicDomain": false,
+				"textToSpeechPermission": "ALLOWED",
+				"epub": {
+					"isAvailable": false
+				},
+				"pdf": {
+					"isAvailable": false
+				},
+				"webReaderLink": "http://play.google.com/books/reader?id=zJ7EzgEACAAJ&hl=&source=gbs_api",
+				"accessViewStatus": "NONE",
+				"quoteSharingAllowed": false
+			},
+			"searchInfo": {
+				"textSnippet": "This e-book, The Psychology of Money: Timeless Lessons on Wealth, Greed, and Happiness, by Morgan Housel, is an unofficial summary and analysis of the original book."
+			}
+		},
+		{
+			"kind": "books#volume",
+			"id": "67U2EAAAQBAJ",
+			"etag": "h3sVXqRsu5o",
+			"selfLink": "https://www.googleapis.com/books/v1/volumes/67U2EAAAQBAJ",
+			"volumeInfo": {
+				"title": "Summary of The Psychology of Money",
+				"subtitle": "by Morgan Housel - Timeless Lesson on Wealth, Greed, and Happiness - A Comprehensive Summary",
+				"authors": ["Alexander Cooper"],
+				"publisher": "BookSummaryGr",
+				"publishedDate": "2021-07-02",
+				"description": "Summary of The Psychology of Money The Psychology of Money by Morgan Housel is a great book that teaches readers how they can grow their wealth today. The book is not complicated like many books that talk about the stock market and do nothing more than confuse the reader and build the writer's ego, but instead, it is filled with the knowledge that the reader can put to use. The book is packed full of wisdom for those who are new to the stock market. This book is not for those who are looking to become billionaires overnight but for those who want to grow their wealth over the long term and enjoy a comfortable life when they are older. There are plenty of stories about how greedy people have lost fortunes as well. You learn about the mindset of wealth and why that is important. The most important lesson that you will learn in this book is that how well you do with money has nothing to do with how smart you are, but it has everything to do with how you behave. That is why so many rich people end up broke after such a short period. They don’t know how to behave. However, it also means that an ordinary person can grow their wealth if they can learn a few behavioral skills. Here is a Preview of What You Will Get: ⁃ A Full Book Summary ⁃ An Analysis ⁃ Fun quizzes ⁃ Quiz Answers ⁃ Etc Get a copy of this summary and learn about the book.",
+				"industryIdentifiers": [
+					{
+						"type": "ISBN_13",
+						"identifier": "9791220821056"
+					}
+				],
+				"readingModes": {
+					"text": true,
+					"image": true
+				},
+				"pageCount": 48,
+				"printType": "BOOK",
+				"categories": ["Business & Economics"],
+				"maturityRating": "NOT_MATURE",
+				"allowAnonLogging": true,
+				"contentVersion": "preview-1.0.0",
+				"panelizationSummary": {
+					"containsEpubBubbles": false,
+					"containsImageBubbles": false
+				},
+				"imageLinks": {
+					"smallThumbnail": "http://books.google.com/books/content?id=67U2EAAAQBAJ&printsec=frontcover&img=1&zoom=5&edge=curl&source=gbs_api",
+					"thumbnail": "http://books.google.com/books/content?id=67U2EAAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api"
+				},
+				"language": "en",
+				"previewLink": "http://books.google.com/books?id=67U2EAAAQBAJ&printsec=frontcover&dq=the+psychology+of+money&hl=&cd=5&source=gbs_api",
+				"infoLink": "http://books.google.com/books?id=67U2EAAAQBAJ&dq=the+psychology+of+money&hl=&source=gbs_api",
+				"canonicalVolumeLink": "https://books.google.com/books/about/Summary_of_The_Psychology_of_Money.html?hl=&id=67U2EAAAQBAJ"
+			},
+			"saleInfo": {
+				"country": "KE",
+				"saleability": "NOT_FOR_SALE",
+				"isEbook": false
+			},
+			"accessInfo": {
+				"country": "KE",
+				"viewability": "PARTIAL",
+				"embeddable": true,
+				"publicDomain": false,
+				"textToSpeechPermission": "ALLOWED",
+				"epub": {
+					"isAvailable": true,
+					"acsTokenLink": "http://books.google.com/books/download/Summary_of_The_Psychology_of_Money-sample-epub.acsm?id=67U2EAAAQBAJ&format=epub&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+				},
+				"pdf": {
+					"isAvailable": true,
+					"acsTokenLink": "http://books.google.com/books/download/Summary_of_The_Psychology_of_Money-sample-pdf.acsm?id=67U2EAAAQBAJ&format=pdf&output=acs4_fulfillment_token&dl_type=sample&source=gbs_api"
+				},
+				"webReaderLink": "http://play.google.com/books/reader?id=67U2EAAAQBAJ&hl=&source=gbs_api",
+				"accessViewStatus": "SAMPLE",
+				"quoteSharingAllowed": false
+			},
+			"searchInfo": {
+				"textSnippet": "This book is not for those who are looking to become billionaires overnight but for those who want to grow their wealth over the long term and enjoy a comfortable life when they are older."
+			}
+		}
+	]
+}
