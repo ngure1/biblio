@@ -48,6 +48,7 @@ class _HomePageState extends State<HomePage> with TickerProviderStateMixin {
                 indicator: const BoxDecoration(),
                 dividerColor: Colors.transparent,
                 unselectedLabelColor: AppColors.secondaryColor,
+                tabAlignment: TabAlignment.center,
                 tabs: const [
                   Tab(text: "All genres"),
                   Tab(text: "Fiction"),
