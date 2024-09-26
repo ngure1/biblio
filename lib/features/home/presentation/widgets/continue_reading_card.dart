@@ -8,10 +8,8 @@ class ContinueReadingCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final size = MediaQuery.of(context).size;
     return Container(
       padding: const EdgeInsets.all(20),
-      width: size.width * 0.8,
       decoration: BoxDecoration(
         color: AppColors.surfaceContainer,
         borderRadius: BorderRadius.circular(16),
@@ -23,7 +21,9 @@ class ContinueReadingCard extends StatelessWidget {
               AppImages.cover1,
               height: 110,
             ),
-            const Expanded(child: SizedBox()),
+            const SizedBox(
+              width: 40,
+            ),
             Column(
               mainAxisAlignment: MainAxisAlignment.start,
               crossAxisAlignment: CrossAxisAlignment.start,

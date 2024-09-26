@@ -43,7 +43,10 @@ class _CategorisedBooksListState extends State<CategorisedBooksList> {
         "title": "The subtle art of not giving a f*ck",
         "image": AppImages.cover2
       },
-      {"title": "Rich dad poor dad", "image": AppImages.cover3}
+      {
+        "title": "Rich dad poor dad",
+        "image": AppImages.cover3,
+      }
     ];
     return ListView.builder(
       scrollDirection: Axis.horizontal,

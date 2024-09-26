@@ -12,7 +12,7 @@ class CategoriesBookCard extends StatelessWidget {
     return SizedBox(
       width: size.width * 0.33,
       child: Container(
-        margin: const EdgeInsets.only(left: 15, right: 5),
+        margin: const EdgeInsets.only(right: 25),
         child: Column(
           children: [
             Image.asset(

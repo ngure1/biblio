@@ -24,54 +24,52 @@ class _SearchPageState extends State<SearchPage> with TickerProviderStateMixin {
     return Scaffold(
       resizeToAvoidBottomInset: false,
       body: SingleChildScrollView(
-        child: Padding(
-          padding: EdgeInsets.symmetric(horizontal: size.width * 0.1),
-          child: Column(
-            children: [
-              const SizedBox(height: 50),
-              TextField(
-                decoration: InputDecoration(
-                  focusedBorder: OutlineInputBorder(
-                      borderRadius: BorderRadius.circular(12),
-                      borderSide: BorderSide(
-                        color: AppColors.primaryInverseColor,
-                        width: 1.5,
-                      )),
-                  border: OutlineInputBorder(
+        padding: EdgeInsets.symmetric(horizontal: size.width * 0.1),
+        child: Column(
+          children: [
+            const SizedBox(height: 50),
+            TextField(
+              decoration: InputDecoration(
+                focusedBorder: OutlineInputBorder(
                     borderRadius: BorderRadius.circular(12),
-                  ),
-                  hintText: 'Find a book that suits your taste',
-                  hintStyle:
-                      TextStyle(color: AppColors.secondaryColor, fontSize: 14),
-                  prefixIcon: Icon(
-                    Icons.search,
-                    color: AppColors.secondaryColor,
-                  ),
+                    borderSide: BorderSide(
+                      color: AppColors.primaryInverseColor,
+                      width: 1.5,
+                    )),
+                border: OutlineInputBorder(
+                  borderRadius: BorderRadius.circular(12),
+                ),
+                hintText: 'Find a book that suits your taste',
+                hintStyle:
+                    TextStyle(color: AppColors.secondaryColor, fontSize: 14),
+                prefixIcon: Icon(
+                  Icons.search,
+                  color: AppColors.secondaryColor,
                 ),
               ),
-              const SizedBox(height: 30),
-              TabBar(
-                controller: tabController,
-                tabAlignment: TabAlignment.start,
-                isScrollable: true,
-                splashFactory: NoSplash.splashFactory,
-                labelPadding: const EdgeInsets.only(left: 0, right: 30),
-                labelColor: AppColors.primaryInverseColor,
-                indicator: const BoxDecoration(),
-                dividerColor: Colors.transparent,
-                unselectedLabelColor: AppColors.secondaryColor,
-                tabs: const [
-                  Tab(text: "All results"),
-                  Tab(text: "Free"),
-                  Tab(text: "Author"),
-                ],
-              ),
-              const SizedBox(height: 15),
-              SizedBox(
-                  height: 570,
-                  child: SearchResultCategories(tabController: tabController)),
-            ],
-          ),
+            ),
+            const SizedBox(height: 30),
+            TabBar(
+              controller: tabController,
+              tabAlignment: TabAlignment.start,
+              isScrollable: true,
+              splashFactory: NoSplash.splashFactory,
+              labelPadding: const EdgeInsets.only(left: 0, right: 30),
+              labelColor: AppColors.primaryInverseColor,
+              indicator: const BoxDecoration(),
+              dividerColor: Colors.transparent,
+              unselectedLabelColor: AppColors.secondaryColor,
+              tabs: const [
+                Tab(text: "All results"),
+                Tab(text: "Free"),
+                Tab(text: "Author"),
+              ],
+            ),
+            const SizedBox(height: 15),
+            SizedBox(
+                height: 570,
+                child: SearchResultCategories(tabController: tabController)),
+          ],
         ),
       ),
     );

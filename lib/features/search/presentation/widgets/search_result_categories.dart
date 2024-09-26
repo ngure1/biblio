@@ -66,7 +66,7 @@ class _SearchResultCategoriesState extends State<SearchResultCategories> {
         padding: const EdgeInsets.only(bottom: 16),
         gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
           crossAxisCount: 2,
-          mainAxisSpacing: 10,
+          mainAxisSpacing: 2,
           crossAxisSpacing: 10,
           childAspectRatio: 0.5,
         ),

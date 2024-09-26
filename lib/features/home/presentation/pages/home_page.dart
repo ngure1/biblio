@@ -31,41 +31,40 @@ class _HomePageState extends State<HomePage> with TickerProviderStateMixin {
     final size = MediaQuery.of(context).size;
     return Scaffold(
       body: SingleChildScrollView(
-        child: SizedBox(
-          width: size.width,
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.center,
-            children: [
-              const SizedBox(height: 40),
-              const PopularBooksCard(),
-              const SizedBox(height: 38),
-              TabBar(
-                controller: _tabController,
-                isScrollable: true,
-                splashFactory: NoSplash.splashFactory,
-                labelPadding: const EdgeInsets.only(left: 0, right: 30),
-                labelColor: AppColors.primaryInverseColor,
-                indicator: const BoxDecoration(),
-                dividerColor: Colors.transparent,
-                unselectedLabelColor: AppColors.secondaryColor,
-                tabAlignment: TabAlignment.center,
-                tabs: const [
-                  Tab(text: "All genres"),
-                  Tab(text: "Fiction"),
-                  Tab(text: "Non-fiction"),
-                ],
-              ),
-              SizedBox(
-                height: 220,
-                child: CategorisedBooksList(tabController: _tabController),
-              ),
-              const SizedBox(
-                height: 30,
-              ),
-              const Align(
-                alignment: Alignment.centerLeft,
-                child: Padding(
-                  padding: EdgeInsets.only(left: 48),
+        padding: const EdgeInsets.only(bottom: 20),
+        child: Center(
+          child: SizedBox(
+            width: size.width * 0.9,
+            child: Column(
+              children: [
+                const SizedBox(height: 40),
+                const PopularBooksCard(),
+                const SizedBox(height: 38),
+                TabBar(
+                  controller: _tabController,
+                  isScrollable: true,
+                  splashFactory: NoSplash.splashFactory,
+                  labelPadding: const EdgeInsets.only(left: 0, right: 30),
+                  labelColor: AppColors.primaryInverseColor,
+                  indicator: const BoxDecoration(),
+                  dividerColor: Colors.transparent,
+                  unselectedLabelColor: AppColors.secondaryColor,
+                  tabAlignment: TabAlignment.start,
+                  tabs: const [
+                    Tab(text: "All genres"),
+                    Tab(text: "Fiction"),
+                    Tab(text: "Non-fiction"),
+                  ],
+                ),
+                SizedBox(
+                  height: 220,
+                  child: CategorisedBooksList(tabController: _tabController),
+                ),
+                const SizedBox(
+                  height: 15,
+                ),
+                const Align(
+                  alignment: Alignment.centerLeft,
                   child: Text(
                     "Continue Reading",
                     style: TextStyle(
@@ -74,12 +73,12 @@ class _HomePageState extends State<HomePage> with TickerProviderStateMixin {
                     ),
                   ),
                 ),
-              ),
-              const SizedBox(
-                height: 20,
-              ),
-              const ContinueReadingCard(),
-            ],
+                const SizedBox(
+                  height: 10,
+                ),
+                const ContinueReadingCard(),
+              ],
+            ),
           ),
         ),
       ),

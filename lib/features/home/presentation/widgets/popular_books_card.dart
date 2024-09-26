@@ -11,7 +11,7 @@ class PopularBooksCard extends StatelessWidget {
     final size = MediaQuery.of(context).size;
     return Container(
       padding: const EdgeInsets.all(20),
-      width: size.width * 0.8,
+      width: size.width,
       decoration: BoxDecoration(
         color: AppColors.primaryContainer,
         borderRadius: BorderRadius.circular(16),
