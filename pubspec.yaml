@@ -11,6 +11,8 @@ dependencies:
     sdk: flutter
 
   flutter_svg: ^2.0.10+1
+  carousel_slider: ^5.0.0
+
   equatable: ^2.0.5
   dartz: ^0.10.1
   mocktail: ^1.0.4

@@ -71,7 +71,7 @@ class PopularBooksCard extends StatelessWidget {
                 const Expanded(child: SizedBox()),
                 Image.asset(
                   AppImages.cover1,
-                  height: 120,
+                  height: 110,
                 ),
               ],
             ),

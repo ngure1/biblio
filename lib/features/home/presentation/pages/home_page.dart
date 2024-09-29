@@ -2,6 +2,7 @@ import 'package:biblio/core/theming/app_colors.dart';
 import 'package:biblio/features/home/presentation/widgets/categorised_books_list.dart';
 import 'package:biblio/features/home/presentation/widgets/continue_reading_card.dart';
 import 'package:biblio/features/home/presentation/widgets/popular_books_card.dart';
+import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
 
 class HomePage extends StatefulWidget {
@@ -13,6 +14,7 @@ class HomePage extends StatefulWidget {
 
 class _HomePageState extends State<HomePage> with TickerProviderStateMixin {
   late TabController _tabController;
+  late int currentIndex;
 
   @override
   void initState() {
@@ -38,8 +40,48 @@ class _HomePageState extends State<HomePage> with TickerProviderStateMixin {
             child: Column(
               children: [
                 const SizedBox(height: 40),
-                const PopularBooksCard(),
-                const SizedBox(height: 38),
+                Column(children: [
+                  CarouselSlider(
+                    items: const [
+                      PopularBooksCard(),
+                      PopularBooksCard(),
+                      PopularBooksCard(),
+                    ],
+                    options: CarouselOptions(
+                        viewportFraction: 1,
+                        autoPlay: true,
+                        autoPlayInterval: const Duration(seconds: 4),
+                        enlargeCenterPage: true,
+                        onPageChanged: (value, reason) {
+                          setState(() {
+                            currentIndex = value;
+                          });
+                        }),
+                  ),
+                  const SizedBox(
+                    height: 12,
+                  ),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      for (int i = 0; i < 3; i++)
+                        AnimatedContainer(
+                          duration: const Duration(milliseconds: 400),
+                          curve: Curves.easeInOutCubic,
+                          height: 4,
+                          width: i == currentIndex ? 28 : 8,
+                          margin: const EdgeInsets.only(right: 8),
+                          decoration: BoxDecoration(
+                            color: i == currentIndex
+                                ? AppColors.primaryInverseColor
+                                : AppColors.secondaryColor,
+                            borderRadius: BorderRadius.circular(30),
+                          ),
+                        ),
+                    ],
+                  )
+                ]),
+                const SizedBox(height: 25),
                 TabBar(
                   controller: _tabController,
                   isScrollable: true,
