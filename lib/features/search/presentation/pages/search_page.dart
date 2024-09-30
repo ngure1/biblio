@@ -19,10 +19,15 @@ class _SearchPageState extends State<SearchPage> with TickerProviderStateMixin {
   void initState() {
     super.initState();
     WidgetsBinding.instance.addPostFrameCallback((_) {
-      // Access the context here
       context.read<SearchBloc>().add(SearchInitialEvent());
     });
     tabController = TabController(length: 3, vsync: this);
+  }
+
+  @override
+  void dispose() {
+    tabController.dispose();
+    super.dispose();
   }
 
   @override
@@ -35,22 +40,21 @@ class _SearchPageState extends State<SearchPage> with TickerProviderStateMixin {
           // todo: implement listener
         },
         builder: (context, state) {
-          if (state is SearchInitialState) {
-            return Scaffold(
-              resizeToAvoidBottomInset: false,
-              body: SingleChildScrollView(
-                child: ConstrainedBox(
-                  constraints: BoxConstraints(
-                    minHeight: size.height,
-                  ),
-                  child: Padding(
-                    padding: EdgeInsets.symmetric(horizontal: size.width * 0.1),
-                    child: Column(
-                      children: [
-                        const SizedBox(height: 50),
-                        const SearchTextField(),
+          return Scaffold(
+            resizeToAvoidBottomInset: false,
+            body: SingleChildScrollView(
+              child: ConstrainedBox(
+                constraints: BoxConstraints(
+                  minHeight: size.height,
+                ),
+                child: Padding(
+                  padding: EdgeInsets.symmetric(horizontal: size.width * 0.1),
+                  child: Column(
+                    children: [
+                      const SizedBox(height: 50),
+                      const SearchTextField(),
+                      if (state is SearchInitialState) ...[
                         SizedBox(height: size.height * 0.3),
-                        // todo : implement recent searches
                         Text(
                           "Start typing to find a book that suits you",
                           style: TextStyle(
@@ -60,58 +64,44 @@ class _SearchPageState extends State<SearchPage> with TickerProviderStateMixin {
                           ),
                           textAlign: TextAlign.center,
                         ),
+                      ] else if (state is SearchLoadingState) ...[
+                        SizedBox(height: size.height * 0.3),
+                        const CircularProgressIndicator(),
+                      ] else if (state is SearchLoadedState) ...[
+                        const SizedBox(height: 30),
+                        TabBar(
+                          controller: tabController,
+                          tabAlignment: TabAlignment.start,
+                          isScrollable: true,
+                          splashFactory: NoSplash.splashFactory,
+                          labelPadding:
+                              const EdgeInsets.only(left: 0, right: 30),
+                          labelColor: AppColors.primaryInverseColor,
+                          indicator: const BoxDecoration(),
+                          dividerColor: Colors.transparent,
+                          unselectedLabelColor: AppColors.secondaryColor,
+                          tabs: const [
+                            Tab(text: "All results"),
+                            Tab(text: "Free"),
+                            Tab(text: "Author"),
+                          ],
+                        ),
+                        const SizedBox(height: 15),
+                        SizedBox(
+                          height: 570,
+                          child: SearchResultCategories(
+                              tabController: tabController),
+                        ),
+                      ] else if (state is SearchErrorState) ...[
+                        const SizedBox(height: 50),
+                        const Text("Error occurred while searching"),
                       ],
-                    ),
+                    ],
                   ),
                 ),
               ),
-            );
-          } else if (state is SearchLoadingState) {
-            return const Center(
-              child: CircularProgressIndicator(),
-            );
-          } else if (state is SearchLoadedState) {
-            return Scaffold(
-              resizeToAvoidBottomInset: false,
-              body: SingleChildScrollView(
-                padding: EdgeInsets.symmetric(horizontal: size.width * 0.1),
-                child: Column(
-                  children: [
-                    const SizedBox(height: 50),
-                    const SearchTextField(),
-                    const SizedBox(height: 30),
-                    TabBar(
-                      controller: tabController,
-                      tabAlignment: TabAlignment.start,
-                      isScrollable: true,
-                      splashFactory: NoSplash.splashFactory,
-                      labelPadding: const EdgeInsets.only(left: 0, right: 30),
-                      labelColor: AppColors.primaryInverseColor,
-                      indicator: const BoxDecoration(),
-                      dividerColor: Colors.transparent,
-                      unselectedLabelColor: AppColors.secondaryColor,
-                      tabs: const [
-                        Tab(text: "All results"),
-                        Tab(text: "Free"),
-                        Tab(text: "Author"),
-                      ],
-                    ),
-                    const SizedBox(height: 15),
-                    SizedBox(
-                        height: 570,
-                        child: SearchResultCategories(
-                            tabController: tabController)),
-                  ],
-                ),
-              ),
-            );
-          } else if (state is SearchErrorState) {
-            return const Center(
-              child: Text("Error"),
-            );
-          } else {
-            return const SizedBox();
-          }
+            ),
+          );
         });
   }
 }

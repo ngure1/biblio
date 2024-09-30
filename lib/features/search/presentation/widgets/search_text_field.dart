@@ -1,5 +1,7 @@
 import 'package:biblio/core/theming/app_colors.dart';
+import 'package:biblio/features/search/presentation/bloc/search_bloc.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 
 class SearchTextField extends StatelessWidget {
   const SearchTextField({super.key});
@@ -24,6 +26,8 @@ class SearchTextField extends StatelessWidget {
           color: AppColors.secondaryColor,
         ),
       ),
+      onChanged: (query) =>
+          context.read<SearchBloc>().add(SearchBookEvent(query: query)),
     );
   }
 }
