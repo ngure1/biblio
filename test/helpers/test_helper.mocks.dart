@@ -4,10 +4,13 @@
 
 // ignore_for_file: no_leading_underscores_for_library_prefixes
 import 'dart:async' as _i5;
-import 'dart:convert' as _i8;
-import 'dart:typed_data' as _i10;
+import 'dart:convert' as _i10;
+import 'dart:typed_data' as _i12;
 
 import 'package:biblio/core/error/failure.dart' as _i6;
+import 'package:biblio/features/search/data/data_sources/remote_datasource.dart'
+    as _i8;
+import 'package:biblio/features/search/data/models/book_model.dart' as _i9;
 import 'package:biblio/features/search/domain/entities/search_book_entity.dart'
     as _i7;
 import 'package:biblio/features/search/domain/repositories/search_book_repository.dart'
@@ -15,7 +18,7 @@ import 'package:biblio/features/search/domain/repositories/search_book_repositor
 import 'package:dartz/dartz.dart' as _i2;
 import 'package:http/http.dart' as _i3;
 import 'package:mockito/mockito.dart' as _i1;
-import 'package:mockito/src/dummies.dart' as _i9;
+import 'package:mockito/src/dummies.dart' as _i11;
 
 // ignore_for_file: type=lint
 // ignore_for_file: avoid_redundant_argument_values
@@ -90,6 +93,27 @@ class MockSearchBookRepository extends _i1.Mock
       ) as _i5.Future<_i2.Either<_i6.Failure, List<_i7.SearchBookEntity>>>);
 }
 
+/// A class which mocks [SearchRemoteDataSource].
+///
+/// See the documentation for Mockito's code generation for more information.
+class MockSearchRemoteDataSource extends _i1.Mock
+    implements _i8.SearchRemoteDataSource {
+  MockSearchRemoteDataSource() {
+    _i1.throwOnMissingStub(this);
+  }
+
+  @override
+  _i5.Future<List<_i9.SearchBookModel>> searchBooks(String? query) =>
+      (super.noSuchMethod(
+        Invocation.method(
+          #searchBooks,
+          [query],
+        ),
+        returnValue: _i5.Future<List<_i9.SearchBookModel>>.value(
+            <_i9.SearchBookModel>[]),
+      ) as _i5.Future<List<_i9.SearchBookModel>>);
+}
+
 /// A class which mocks [Client].
 ///
 /// See the documentation for Mockito's code generation for more information.
@@ -145,7 +169,7 @@ class MockHttpClient extends _i1.Mock implements _i3.Client {
     Uri? url, {
     Map<String, String>? headers,
     Object? body,
-    _i8.Encoding? encoding,
+    _i10.Encoding? encoding,
   }) =>
       (super.noSuchMethod(
         Invocation.method(
@@ -176,7 +200,7 @@ class MockHttpClient extends _i1.Mock implements _i3.Client {
     Uri? url, {
     Map<String, String>? headers,
     Object? body,
-    _i8.Encoding? encoding,
+    _i10.Encoding? encoding,
   }) =>
       (super.noSuchMethod(
         Invocation.method(
@@ -207,7 +231,7 @@ class MockHttpClient extends _i1.Mock implements _i3.Client {
     Uri? url, {
     Map<String, String>? headers,
     Object? body,
-    _i8.Encoding? encoding,
+    _i10.Encoding? encoding,
   }) =>
       (super.noSuchMethod(
         Invocation.method(
@@ -238,7 +262,7 @@ class MockHttpClient extends _i1.Mock implements _i3.Client {
     Uri? url, {
     Map<String, String>? headers,
     Object? body,
-    _i8.Encoding? encoding,
+    _i10.Encoding? encoding,
   }) =>
       (super.noSuchMethod(
         Invocation.method(
@@ -275,7 +299,7 @@ class MockHttpClient extends _i1.Mock implements _i3.Client {
           [url],
           {#headers: headers},
         ),
-        returnValue: _i5.Future<String>.value(_i9.dummyValue<String>(
+        returnValue: _i5.Future<String>.value(_i11.dummyValue<String>(
           this,
           Invocation.method(
             #read,
@@ -286,7 +310,7 @@ class MockHttpClient extends _i1.Mock implements _i3.Client {
       ) as _i5.Future<String>);
 
   @override
-  _i5.Future<_i10.Uint8List> readBytes(
+  _i5.Future<_i12.Uint8List> readBytes(
     Uri? url, {
     Map<String, String>? headers,
   }) =>
@@ -296,8 +320,8 @@ class MockHttpClient extends _i1.Mock implements _i3.Client {
           [url],
           {#headers: headers},
         ),
-        returnValue: _i5.Future<_i10.Uint8List>.value(_i10.Uint8List(0)),
-      ) as _i5.Future<_i10.Uint8List>);
+        returnValue: _i5.Future<_i12.Uint8List>.value(_i12.Uint8List(0)),
+      ) as _i5.Future<_i12.Uint8List>);
 
   @override
   _i5.Future<_i3.StreamedResponse> send(_i3.BaseRequest? request) =>
