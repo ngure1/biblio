@@ -18,14 +18,16 @@ class _SearchPageState extends State<SearchPage> with TickerProviderStateMixin {
   @override
   void initState() {
     super.initState();
-    bloc.add(SearchInitialEvent());
+    WidgetsBinding.instance.addPostFrameCallback((_) {
+      // Access the context here
+      context.read<SearchBloc>().add(SearchInitialEvent());
+    });
     tabController = TabController(length: 3, vsync: this);
   }
 
-  final bloc = SearchBloc();
-
   @override
   Widget build(BuildContext context) {
+    final bloc = context.read<SearchBloc>();
     final size = MediaQuery.of(context).size;
     return BlocConsumer<SearchBloc, SearchState>(
         bloc: bloc,
