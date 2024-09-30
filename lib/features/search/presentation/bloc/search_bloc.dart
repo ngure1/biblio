@@ -23,9 +23,11 @@ class SearchBloc extends Bloc<SearchEvent, SearchState> {
           emit(SearchLoadingState());
           try {
             // Simulate API call
-            await Future.delayed(const Duration(seconds: 5));
-            // TODO: Implement actual search logic here
-            emit(SearchLoadedState());
+            final result = await searchBookUseCase(event.query);
+            result.fold(
+              (failure) => emit(SearchErrorState(message: failure.message)),
+              (books) => emit(SearchLoadedState(books: books)),
+            );
           } catch (e) {
             emit(SearchErrorState(message: e.toString()));
           }

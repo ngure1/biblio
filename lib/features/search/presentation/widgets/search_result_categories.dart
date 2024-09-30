@@ -1,11 +1,13 @@
-import 'package:biblio/core/assets/assets.dart';
+import 'package:biblio/features/search/domain/entities/search_book_entity.dart';
 import 'package:biblio/features/search/presentation/widgets/search_book_card.dart';
 import 'package:flutter/material.dart';
 
 class SearchResultCategories extends StatefulWidget {
   final TabController tabController;
+  final List<SearchBookEntity> books;
 
-  const SearchResultCategories({super.key, required this.tabController});
+  const SearchResultCategories(
+      {super.key, required this.tabController, required this.books});
 
   @override
   State<SearchResultCategories> createState() => _SearchResultCategoriesState();
@@ -17,65 +19,28 @@ class _SearchResultCategoriesState extends State<SearchResultCategories> {
     return TabBarView(
       controller: widget.tabController,
       children: [
-        _buildBookList(),
-        _buildBookList(),
-        _buildBookList(),
+        _buildBookList(widget.books),
+        _buildBookList(widget.books),
+        _buildBookList(widget.books),
       ],
     );
   }
 
-  Widget _buildBookList() {
-    final List dummyData = [
-      {
-        "title": "The Psychology of Money",
-        "author": "Dale Carnegie",
-        "image": AppImages.cover1,
-      },
-      {
-        "title": "The subtle art of not giving a f*ck",
-        "author": "Dale Carnegie",
-        "image": AppImages.cover2
-      },
-      {
-        "title": "Rich dad poor dad",
-        "author": "Dale Carnegie",
-        "image": AppImages.cover3,
-      },
-      {
-        "title": "The Psychology of Money",
-        "author": "Alexandre Dumas",
-        "image": AppImages.cover1,
-      },
-      {
-        "title": "The subtle art of not giving a f*ck",
-        "author": "Benjamin Graham",
-        "image": AppImages.cover2
-      },
-      {
-        "title": "Rich dad poor dad",
-        "author": "Robert Kiyosaki",
-        "image": AppImages.cover3
-      },
-      {
-        "title": "The Psychology of Money",
-        "author": "Alexandre Dumas",
-        "image": AppImages.cover1,
-      },
-    ];
+  Widget _buildBookList(List<SearchBookEntity> books) {
     return GridView.builder(
         padding: const EdgeInsets.only(bottom: 16),
         gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
           crossAxisCount: 2,
-          mainAxisSpacing: 2,
+          mainAxisSpacing: 5,
           crossAxisSpacing: 10,
           childAspectRatio: 0.5,
         ),
-        itemCount: dummyData.length,
+        itemCount: books.length,
         itemBuilder: (context, index) {
           return SearchBookCard(
-            title: dummyData[index]["title"],
-            author: dummyData[index]["author"],
-            imageUrl: dummyData[index]["image"],
+            title: books[index].title,
+            author: books[index].author,
+            imageUrl: books[index].imageUrl,
           );
         });
   }

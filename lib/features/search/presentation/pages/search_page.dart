@@ -90,11 +90,11 @@ class _SearchPageState extends State<SearchPage> with TickerProviderStateMixin {
                         SizedBox(
                           height: 570,
                           child: SearchResultCategories(
-                              tabController: tabController),
+                              books: state.books, tabController: tabController),
                         ),
                       ] else if (state is SearchErrorState) ...[
                         const SizedBox(height: 50),
-                        const Text("Error occurred while searching"),
+                        Text(state.message),
                       ],
                     ],
                   ),

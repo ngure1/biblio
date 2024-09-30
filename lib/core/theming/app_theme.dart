@@ -3,9 +3,10 @@ import 'package:flutter/material.dart';
 
 class AppTheme {
   static final ThemeData lightTheme = ThemeData(
-    brightness: Brightness.light,
-    scaffoldBackgroundColor: AppColors.surfaceColor,
-    splashColor: Colors.transparent,
-    highlightColor: Colors.transparent,
-  );
+      brightness: Brightness.light,
+      scaffoldBackgroundColor: AppColors.surfaceColor,
+      splashColor: Colors.transparent,
+      highlightColor: Colors.transparent,
+      progressIndicatorTheme:
+          ProgressIndicatorThemeData(color: AppColors.primaryInverseColor));
 }

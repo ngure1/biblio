@@ -9,6 +9,7 @@ class SearchTextField extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return TextField(
+      cursorColor: AppColors.primaryInverseColor,
       decoration: InputDecoration(
         focusedBorder: OutlineInputBorder(
             borderRadius: BorderRadius.circular(12),

@@ -14,8 +14,8 @@ class SearchInitialState extends SearchState {}
 class SearchLoadingState extends SearchState {}
 
 class SearchLoadedState extends SearchState {
-  // final List<SearchBookEntity> books;
-  // const SearchLoadedState({required this.books});
+  final List<SearchBookEntity> books;
+  const SearchLoadedState({required this.books});
 }
 
 class SearchErrorState extends SearchState {
